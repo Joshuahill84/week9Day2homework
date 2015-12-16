@@ -184,6 +184,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512152145252_initialcreate.cs" />
+    <Compile Include="Migrations\201512152145252_initialcreate.Designer.cs">
+      <DependentUpon>201512152145252_initialcreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512160228437_signininfo.cs" />
+    <Compile Include="Migrations\201512160228437_signininfo.Designer.cs">
+      <DependentUpon>201512160228437_signininfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -265,6 +274,14 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201512152145252_initialcreate.resx">
+      <DependentUpon>201512152145252_initialcreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512160228437_signininfo.resx">
+      <DependentUpon>201512160228437_signininfo.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

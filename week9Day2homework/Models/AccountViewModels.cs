@@ -8,6 +8,9 @@ namespace week9Day2homework.Models
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        
+
     }
 
     public class ExternalLoginListViewModel
@@ -60,6 +63,9 @@ namespace week9Day2homework.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
+
+        
+       
     }
 
     public class RegisterViewModel
@@ -79,6 +85,15 @@ namespace week9Day2homework.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+        [Display(Name = "Date Of Birth")]
+        public int DateOfBirth { get; set; }
+
+
     }
 
     public class ResetPasswordViewModel

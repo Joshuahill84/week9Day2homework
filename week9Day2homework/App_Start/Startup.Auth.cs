@@ -45,24 +45,24 @@ namespace week9Day2homework
             // This is similar to the RememberMe option when you log in.
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
-            // Uncomment the following lines to enable logging in with third party login providers
+            //Uncomment the following lines to enable logging in with third party login providers
             //app.UseMicrosoftAccountAuthentication(
             //    clientId: "",
             //    clientSecret: "");
 
-            //app.UseTwitterAuthentication(
+           // app.UseTwitterAuthentication(
             //   consumerKey: "",
-            //   consumerSecret: "");
+             //  consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+           // app.UseFacebookAuthentication(
+              // appId: "",
+             //  appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "515519195432-l25d1gv72n2bb8t3uqp62781ftbthtii.apps.googleusercontent.com",
+                ClientSecret = "LTZ_tH3qEFswx_C2qlhYUDhT"
+            });
         }
     }
 }
